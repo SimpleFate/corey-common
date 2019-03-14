@@ -1,7 +1,5 @@
 package org.hust.corey.utils;
 
-import org.springframework.stereotype.Component;
-
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
@@ -9,7 +7,6 @@ import java.util.Map;
 /**
  * Created by HUST Corey on 2019-03-15.
  */
-@Component
 public class LogUtil {
     public static final Integer error = 2;
     public static final Integer warning = 1;
@@ -32,7 +29,7 @@ public class LogUtil {
     }
 
     /**
-     * get log string
+     * get log
      * @param msg message to log
      * @param level log level {LogUtil.info, LogUtil.warning, LogUtil.error}
      * @return string of log
